@@ -31,9 +31,9 @@ uci commit dhcp
 #uci delete firewall.@defaults[0].syn_flood                   # 防火墙→SYN-flood 防御——关闭；默认开启
 #uci set firewall.@defaults[0].fullcone='1'                   # 防火墙→FullCone-NAT——启用；默认关闭
 #uci commit firewall
-uci set dropbear.@dropbear[0].Port='8822'                    # SSH端口设置为'8822'
+uci set dropbear.@dropbear[0].Port='22'                    # SSH端口设置为'8822'
 uci commit dropbear
-uci set system.@system[0].hostname='OpenWrt'                 # 修改主机名称为OpenWrt
+uci set system.@system[0].hostname='KenGro'                 # 修改主机名称为OpenWrt
 uci set luci.main.mediaurlbase='/luci-static/argon'          # 设置argon为默认主题
 uci commit luci
 uci set ttyd.@ttyd[0].command='/bin/login -f root'           # 设置ttyd免帐号登录
