@@ -53,7 +53,7 @@ echo '设置密码为空'
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' $ZZZ
 
 # x86机型,默认内核5.10，修改内核为5.15
-#sed -i 's/PATCHVER:=5.10/PATCHVER:=5.15/g' target/linux/x86/Makefile
+sed -i 's/PATCHVER:=5.10/PATCHVER:=6.1/g' target/linux/x86/Makefile
 
 #############################################pushd#############################################
 pushd feeds/luci
